@@ -1,0 +1,143 @@
+/* Container */
+.dashboard-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* Headings */
+.dashboard-container h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: purple;
+}
+
+.dashboard-container h2 {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+.dashboard {
+  padding: 2rem;
+}
+.post-card1 {
+  position: relative;
+  background-color: #f9f9f9;
+  border-left: 4px solid purple;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03);
+}
+
+.delete-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.4rem;
+  border-radius: 50%;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.delete-icon {
+  color: #555;
+  font-size: 1.2rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.delete-btn:hover .delete-icon {
+  color: #a855f7; /* Tailwind's purple-500 */
+}
+
+
+/* Common info & section styles */
+.common-info,
+.entrepreneur-section,
+.skilled-labor-section,
+.landowner-section {
+  background-color: #f9f9f9;
+  border-left: 4px solid purple;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03);
+  transition: box-shadow 0.3s ease;
+}
+.post-section {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.post-prompt {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: purple; /* Purple */
+  margin-bottom: 0.7rem;
+}
+
+.create-post-btn {
+  background: purple; /* Pink to purple */
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.create-post-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(147, 51, 234, 0.4);
+}
+
+.common-info:hover,
+.entrepreneur-section:hover,
+.skilled-labor-section:hover,
+.landowner-section:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Paragraph styling */
+.common-info p,
+.entrepreneur-section p,
+.skilled-labor-section p,
+.landowner-section p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+strong {
+  color: #1d1d1d;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .dashboard-container {
+    padding: 1rem;
+  }
+
+  .dashboard-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .dashboard-container h2 {
+    font-size: 1rem;
+  }
+
+  .common-info,
+  .entrepreneur-section,
+  .skilled-labor-section,
+  .landowner-section {
+    padding: 1rem;
+  }
+}
